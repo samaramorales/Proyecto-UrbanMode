@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>UrbanMode - Inicio</title>
+  <link rel="stylesheet" href="../img/image-removebg-preview (1).png">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+  <style>
+    body {
+      padding-top: 90px;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(to bottom, #d9a7c7, #fffcdc);
+      margin: 0;
+    }
+
+    .navbar {
+      background-color: #FFAFBD;
+      transition: background-color 0.5s ease-in-out, transform 0.3s ease-in-out;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1000;
+      padding: 10px 30px;
+      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .navbar:hover {
+      background-color: #ffc3a0;
+      transform: scale(1.01);
+    }
+
+    .navbar-brand img {
+      height: 50px;
+      transition: transform 0.3s ease;
+    }
+
+    .navbar-brand img:hover {
+      transform: scale(1.1) rotate(-3deg);
+    }
+
+    .navbar-nav {
+      display: flex;
+      gap: 15px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .navbar-nav .nav-link {
+      color: black !important;
+      padding: 10px 15px;
+      border-radius: 5px;
+      background-color: #FFAFBD;
+      font-weight: bold;
+      text-decoration: none;
+      transition: background-color 0.3s ease, color 0.3s ease;
+    }
+
+    .navbar-nav .nav-link:hover {
+      background-color: #ffc3a0;
+      color: white !important;
+    }
+
+    .carousel {
+      max-width: 1000px;
+      margin: auto;
+    }
+
+    .carousel-inner img {
+      border-radius: 20px;
+      max-height: 500px;
+      object-fit: cover;
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 30px;
+      padding: 40px 20px;
+      max-width: 1200px;
+      margin: auto;
+    }
+
+    .card {
+      background: white;
+      border-radius: 10px;
+      overflow: hidden;
+      text-align: center;
+      padding: 20px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      position: relative;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    }
+
+    .card:hover {
+      transform: translateY(-5px) scale(1.05);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    }
+
+    .card img {
+      height: 300px;
+      object-fit: cover;
+      border-radius: 10px;
+      margin-bottom: 10px;
+      width: 100%;
+    }
+
+    .btn-comprar {
+      background-color: black;
+      color: white;
+      transition: background-color 0.3s ease;
+      display: block;
+      padding: 10px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    .btn-comprar:hover {
+      background-color: crimson;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 0;
+    }
+
+    .social-icons a {
+      font-size: 24px;
+      margin: 0 10px;
+      color: #000;
+      transition: color 0.3s ease;
+    }
+
+    .social-icons a:hover {
+      color: #e91e63;
+    }
+  </style>
+</head>
+<body>
+
+<!-- Navbar con logo -->
+<nav class="navbar navbar-expand-lg">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">
+      <img src="img/logo.png" alt="UrbanMode">
+    </a>
+    <ul class="navbar-nav ms-auto">
+      <li><a class="nav-link" href="index.html">Inicio</a></li>
+      <li><a class="nav-link" href="hombre.html">Hombre</a></li>
+      <li><a class="nav-link" href="mujer.html">Mujer</a></li>
+      <li><a class="nav-link" href="sale.html">Sale</a></li>
+    </ul>
+  </div>
+</nav>
+
+<!-- Carrusel -->
+<div class="d-flex justify-content-center mt-5">
+  <div id="carouselExample" class="carousel slide" data-bs-ride="carousel" style="max-width: 1000px;">
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="https://i.pinimg.com/736x/46/03/c6/4603c6b9edfe07750f34b2f40d9202e4.jpg" class="" alt="Banner 1" height="500" width="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/43/da/e4/43dae47f669bbbd323a24c204b61cad0.jpg" class="" alt="Banner 2" height="500" width="500">
+    </div>
+    <div class="carousel-item">
+      <img src="https://i.pinimg.com/736x/3a/b9/b6/3ab9b6ffa001fe38937ab33cd3bdcc28.jpg" class="" alt="Banner 3" height="500" width="500">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon"></span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon"></span>
+  </button>
+</div>
+</div>
+
+<!-- Productos -->
+<section class="container mt-5">
+  <div class="card"><img src="https://i.pinimg.com/736x/fc/08/68/fc0868ee09a41385bc6e629065c3b736.jpg" alt="Producto 1"><h5>Blusa Rosa</h5><p>$35.00</p><a href="#" class="btn-comprar">Comprar</a></div>
+  <div class="card"><img src="https://i.pinimg.com/736x/5d/5b/0e/5d5b0e153edb4868ef23d5afc8f75005.jpg" alt="Producto 2"><h5>Sudadera Oversize</h5><p>$55.00</p><a href="#" class="btn-comprar">Comprar</a></div>
+  <div class="card"><img src="https://i.pinimg.com/736x/b6/33/c0/b633c0ce038adc60d6ab15c6fb0a450f.jpg" alt="Producto 3"><h5>Pantalón Cargo</h5><p>$60.00</p><a href="#" class="btn-comprar">Comprar</a></div>
+  <div class="card"><img src="https://i.pinimg.com/736x/0e/e5/67/0ee567f9593e26aee554f770dd30d9ca.jpg" alt="Producto 4"><h5>Camisa Estampada</h5><p>$45.00</p><a href="#" class="btn-comprar">Comprar</a></div>
+  <div class="card"><img src="https://i.pinimg.com/736x/f9/e1/d2/f9e1d2a22927a47aca2890aa125cd3ab.jpg" alt="Producto 5"><h5>Falda Denim</h5><p>$38.00</p><a href="#" class="btn-comprar">Comprar</a></div>
+  <div class="card"><img src="https://i.pinimg.com/736x/5e/29/fc/5e29fc4d79199eec2f3dd070e92a8c85.jpg" alt="Producto 6"><h5>Chaqueta</h5><p>$70.00</p><a href="#" class="btn-comprar">Comprar</a></div>
+</section>
+
+<!-- Video Promocional -->
+<div class="container mt-5">
+  <div class="ratio ratio-16x9">
+    <iframe src="https://www.youtube.com/embed/ScMzIvxBSi4" title="Video Promocional" allowfullscreen></iframe>
+  </div>
+</div>
+
+<!-- Mapa -->
+<div class="container mt-5">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.020004350801!2d-122.41941518468166!3d37.77492977975943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085808c831c1e81%3A0x18dbe0efdd8f7f64!2sSan+Francisco%2C+CA%2C+USA!5e0!3m2!1ses-419!2spe!4v1612139123456" width="100%" height="350" style="border:0;" allowfullscreen loading="lazy"></iframe>
+</div>
+
+<!-- Footer -->
+<footer>
+  <div class="social-icons">
+    <a href="#"><i class="fab fa-instagram"></i></a>
+    <a href="#"><i class="fab fa-facebook"></i></a>
+    <a href="#"><i class="fab fa-x-twitter"></i></a>
+  </div>
+  <p class="mt-3">&copy; 2025 UrbanMode. Todos los derechos reservados.</p>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
